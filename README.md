@@ -1,8 +1,9 @@
 Для запуска приложения:
-1. В Директории front выполнить:
-    1. npm i 
-    2. npm run dev
 
-2. В директории back:
-    1. npm i
-    2. npm run dev
+#### В Директории front выполнить:
+      npm i 
+      npm run dev
+
+#### В директории back:
+      npm i
+      npm run dev
