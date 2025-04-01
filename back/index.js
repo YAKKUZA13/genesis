@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const app = express();
-
+const API_URL = ""
 app.use(express.json());
 
 const ENTITY_CONFIG = {
@@ -19,7 +19,8 @@ app.post('/create-entity', async (req, res) => {
       return res.status(400).json({ error: 'Missing entityType or data' });
     }
 
-    const tokenResponse = await axios.get('https://app2.gnzs.ru/amocrm/test/oauth/get-token.php', {
+    
+    const tokenResponse = await axios.get(API_URL, {
       headers: { 'X-Client-Id': process.env.CLIENT_ID }
     });
 
